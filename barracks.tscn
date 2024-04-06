@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://blo0rrifm07m4"]
+
+[ext_resource type="Script" path="res://barracks.gd" id="1_7ibhw"]
+[ext_resource type="PackedScene" uid="uid://bjhmd1idtgeu5" path="res://quarter.tscn" id="2_b1w26"]
+
+[node name="Barracks" type="Node2D"]
+script = ExtResource("1_7ibhw")
+quarter_scene = ExtResource("2_b1w26")

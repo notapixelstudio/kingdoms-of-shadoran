@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxr7xm3mgt387"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_7txod"]
+[ext_resource type="PackedScene" uid="uid://cmn4jl3cvwvt3" path="res://board.tscn" id="1_gvvsx"]
+[ext_resource type="PackedScene" uid="uid://blo0rrifm07m4" path="res://barracks.tscn" id="2_iaa87"]
+[ext_resource type="PackedScene" uid="uid://gsqqinp1j0ei" path="res://piece.tscn" id="2_u46hr"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_7txod")
+piece_scene = ExtResource("2_u46hr")
+
+[node name="Board" parent="." instance=ExtResource("1_gvvsx")]
+unique_name_in_owner = true
+position = Vector2(10, 300)
+
+[node name="BarracksOppo" parent="." instance=ExtResource("2_iaa87")]
+position = Vector2(80, 48)
+
+[node name="Barracks" parent="." instance=ExtResource("2_iaa87")]
+position = Vector2(80, 1032)

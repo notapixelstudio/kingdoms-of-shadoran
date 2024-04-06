@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjhmd1idtgeu5"]
+
+[ext_resource type="Script" path="res://quarter.gd" id="1_oup1e"]
+
+[node name="Quarter" type="Node2D"]
+script = ExtResource("1_oup1e")
+
+[node name="Rect" type="ColorRect" parent="."]
+unique_name_in_owner = true
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Line2D" type="Line2D" parent="."]
+unique_name_in_owner = true
+closed = true
+width = 4.0
+default_color = Color(0.176471, 0.176471, 0.176471, 1)
