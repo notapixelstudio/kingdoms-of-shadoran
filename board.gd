@@ -38,7 +38,7 @@ func place_piece(piece, col, row):
 
 func _input(event):
 	if (event is InputEventMouseButton and event.is_released()):
-		var col = floor((event.global_position.x-global_position.x)/cell_size)+1
-		var row = height - floor((event.global_position.y-global_position.y)/cell_size)
+		var col = floor((event.position.x-global_position.x)/cell_size)+1
+		var row = height - floor((event.position.y-global_position.y)/cell_size)
 		if col >= 1 and row >= 1 and col <= width and row <= height:
 			Events.release_on_cell.emit(col, row)

@@ -25,7 +25,10 @@ func _on_drag_started(piece:Piece):
 	
 func _on_drag_ended(piece:Piece):
 	print('Drag ended for piece: %s' % piece.name)
-	#dragged_piece = null
+	reset_drag.call_deferred()
+	
+func reset_drag():
+	dragged_piece = null
 
 func _on_release_on_cell(col:int, row:int):
 	print('Release on cell (%d, %d)' % [col, row])

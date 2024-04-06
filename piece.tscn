@@ -6,3 +6,4 @@
 [node name="Piece" type="Sprite2D"]
 script = ExtResource("1_gnwax")
 _piece_type = ExtResource("2_po52x")
+size = 48
